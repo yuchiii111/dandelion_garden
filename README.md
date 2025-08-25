@@ -14,7 +14,7 @@ It's a 3D data visualization project that visualizes the academic achievements a
 ## 📷 Screenshots
 ### Dashboard 1
 ![Dashboard Screenshot](static/dashboard.png)
-The “Garden Landscape” provides a 2D overview of faculty collaborations via a force‐directed layout[1], where nodes represent faculties and are clustered by collaboration frequency.  
+The “Garden Landscape” provides a 2D overview of faculty collaborations via a force‐directed layout[^1], where nodes represent faculties and are clustered by collaboration frequency.  
 
 ### Dashboard 2
 ![Dashboard Screenshot](static/2.png)
@@ -53,4 +53,4 @@ However, the **architecture, visualization components, and algorithms** included
 
 ---
 
-[1]: Force‐directed Layout Algorithm. Available at: [igraph](https://r.igraph.org/reference/layout_with_graphopt.html)
+[^1]: Force‐directed Layout Algorithm. Available at: [igraph](https://r.igraph.org/reference/layout_with_graphopt.html)
