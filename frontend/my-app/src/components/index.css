@@ -1,0 +1,190 @@
+.certain-category-search-dropdown .ant-select-dropdown-menu-item-group-title {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .certain-category-search-dropdown .ant-select-dropdown-menu-item-group {
+    border-bottom: 1px solid #f6f6f6;
+  }
+  
+  .certain-category-search-dropdown .ant-select-dropdown-menu-item {
+    padding-inline-start: 1.7vh;
+
+  }
+  
+  .certain-category-search-dropdown .ant-select-dropdown-menu-item.show-all {
+    text-align: center;
+    cursor: default;
+  }
+  
+  .certain-category-search-dropdown .ant-select-dropdown-menu {
+    max-height: 32.3vh;
+
+  }
+  .ant-input-search{
+    color: #ffffff;
+
+  }
+  .ant-input-search input {
+    /* border:none;  */
+    border-color: #2f302f;
+    background-color: #2f302f; 
+    opacity: 85%;
+    /* color: #ffffff; */
+    /* border-radius: 30px; */
+}
+.ant-input-search ::placeholder {
+  color: #ffffff;
+}
+#rc_select_1.ant-input{
+  background-color: #2f302f;
+  color: #fff;
+}
+/* #rc_select_1_list.ant-input{
+  background-color: #2f302f;
+  color: #fff;
+} */
+.ant-input-group-addon{
+  border:none; 
+  /* background-color:   #2f302f;  */
+}
+.ant-input-group-addon button{
+  background-color:   #2f302f; 
+  opacity: 85%;
+  /* border:none;  */
+  border-color: #2f302f;
+  color: #fff;
+  border-radius: 30px;
+}
+.anticon svg{
+  fill:#fff
+}
+.ant-checkbox .ant-checkbox-inner{
+  /* fill:'black'; */
+  background-color: transparent;
+  color: #000;
+  border-radius: 1.6vh;
+}
+
+.custom-select {
+  position: relative;
+  width: 21.55vh;
+  border: none;
+  border-radius: 1.6vh;
+}
+
+.select-value {
+  padding: 1.1vh;
+  background-color: #fff;
+  cursor: pointer;
+  /* border-radius: 4px; */
+}
+.options-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.8);
+  border: none;
+  border-radius: 1.6vh;
+  box-shadow: 0 0.2vh 1.1vh rgba(0, 0, 0, 0.2);
+  padding: 0.5vh 0;
+  overflow: hidden;
+  z-index: 1000;
+  height: 11.85vh;
+}
+.options {
+  /* background-color:rgba(30, 30, 30, 0.8); */
+  color:#fff;
+  border: none;
+  z-index: 1000;
+  /* box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); */
+  max-height: 8.6vh; /* 限制最大高度 */
+  font-size: 1.4vh;
+  overflow-y: auto; /* 启用垂直滚动条 */
+  overflow-x: hidden; /* 隐藏水平滚动条 */
+  border-radius: 1.6vh;
+  padding: 1.1vh;
+  margin: 0.5vh;
+  padding-left: 2.7vh;
+  white-space: nowrap;
+  direction: rtl;
+}
+/* .options::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px; 
+  height: 100%;
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0));
+  pointer-events: none;
+
+} */
+.option {
+  /* padding: 10px; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: ltr; /* 重置文字方向为从左到右 */
+  margin-bottom: 0.8vh; /* 增加选项之间的间距 */
+  transition: opacity 0.3s ease;
+}
+.checkmark {
+  margin-right: 0.3vh; 
+}
+
+.options-wrapper::before,
+.options-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2.1vh; 
+  background: linear-gradient(to bottom, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0));
+  pointer-events: none;
+}
+
+.options-wrapper::after {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0));
+}
+
+
+.options::-webkit-scrollbar {
+  width: 1.3vh;
+  position: absolute;
+  left: 0;
+  transform: translateX(-12px);
+  
+}
+
+.options::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  width: 1.3vh; 
+  height: 1.3vh;
+  
+  /* border-color: #cdfbe8; */
+  /* border-width: 1px; */
+  /* border-style: initial; */
+  border: 3px solid #cdfbe8; /* 添加绿色边框 */
+}
+
+.options::-webkit-scrollbar-track {
+  background:none;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.option:hover {
+  /* background-color: #f0f0f0; */
+}
+
+.option.selected {
+  /* background-color: #e0e0e0; */
+}

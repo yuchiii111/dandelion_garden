@@ -1,0 +1,174 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        black 50%,
+        transparent 100%
+      );
+      mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 50%,
+        transparent 100%
+      );
+    
+    position: relative;
+    overflow: hidden; /* 隐藏溢出内容 */
+  }
+  .container::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 32px;
+  
+    background: rgb(30, 30, 30, 0.8);
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    scroll-snap-type: both mandatory;
+    white-space: nowrap;
+    border-radius: 5px;
+    /* -ms-overflow-style: auto; */
+    overflow-y: hidden;
+    color:white;
+    /* scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.7) transparent; */
+    -webkit-overflow-scrolling: touch; 
+  }
+  .items::-webkit-scrollbar {
+    width: 8px; /* 设置滚动条的宽度 */
+    height: 13px;
+    position: absolute;
+    /* left: 0; */
+}
+  .items::-webkit-scrollbar-track {
+    background:    
+    repeating-linear-gradient(
+        90deg, 
+        transparent, 
+        transparent 10px, 
+        rgba(255, 255, 255, 0.5) 10px, 
+        rgba(255, 255, 255, 0.5) 12px 
+      ),
+      linear-gradient(to right, 
+      transparent 0%, 
+      rgba(255, 255, 255, 0.7) 30%, 
+      rgba(255, 255, 255, 0.7) 70%, 
+      transparent 100%
+    );
+    border-radius: 5px;
+  }
+  .item {
+    display: inline-block;
+    text-align: right;
+    list-style-type: none;
+    font-size: 16px; /* Adjust as needed */
+    cursor: pointer;
+    scroll-snap-align: right;
+  }
+  
+  .item div {
+    /* transform: rotateY(0deg) scale(1); */
+    transition: transform 0.2s ease-out;
+  }
+  
+  .filterCount-button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .dropdown-container {
+    position: relative; /* 确保下拉菜单相对于按钮定位 */
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; /* 显示在按钮下方 */
+    left: 0;
+    background-color: rgb(30, 30, 30, 0.8);
+    color:white;
+    font-size: 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+    max-height: 150px;
+    width: 100px;
+    white-space: nowrap;
+    /* border: 1px solid #ccc; */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* 确保菜单在其他元素上方 */
+    border-radius: 15px;
+    direction: rtl;
+    margin: 5px;
+  }
+  
+  .dropdown-option {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    direction: ltr;
+  }
+
+/* .dropdown-container::before,
+.dropdown-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px; 
+  background: linear-gradient(to bottom, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0));
+  pointer-events: none;
+} */
+
+/* .dropdown-container::after {
+  top: auto;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0));
+}
+ */
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 10px;
+  position: absolute;
+  left: 10px;
+  transform: translateX(-12px);
+  max-height: 80px;
+}
+.checkmarkk {
+    margin-right: 1px; 
+  }
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  width: 20px; 
+  max-height: 5px; 
+  
+  /* border-color: #cdfbe8; */
+  /* border-width: 1px; */
+  /* border-style: initial; */
+  /* border: 3px solid #cdfbe8;  */
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+  background:none;
+}
+
+  
