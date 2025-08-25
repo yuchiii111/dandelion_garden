@@ -7,9 +7,8 @@ It's a 3D data visualization project that visualizes the academic achievements a
 ---
 
 ## 🚀 Live Demo
-👉 View the Deployed Project
-<video src="static/Demo.MP4" width="600" controls></video>
-
+- [▶ Watch on YouTube](https://youtu.be/lnrA8HmgY4w)  
+- Also available in this repository: [`static/Demo.mp4`](./static/Demo.mp4)
 ---
 
 ## 📷 Screenshots
